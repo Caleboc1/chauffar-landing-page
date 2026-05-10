@@ -39,18 +39,18 @@ const socialLinks = [
 function AppStoreButtons() {
     return (
         <div className="flex flex-row gap-3">
-            <button className="flex items-center gap-2 border border-white/30 rounded-lg px-3 py-2 hover:bg-white/10 transition-colors">
-                <IoLogoGooglePlaystore size={20} className="text-white" />
+            <button className="flex items-center gap-2 bg-white rounded-lg px-3 py-2 hover:bg-white/10 transition-colors">
+                <IoLogoGooglePlaystore size={20} className="text-foreground" />
                 <span className="flex flex-col text-left leading-tight">
-                    <span className="text-[9px] text-white/60 uppercase tracking-wide">Get it on</span>
-                    <span className="text-xs font-semibold text-white">Google Play</span>
+                    <span className="text-[9px] text-foreground uppercase tracking-wide">Get it on</span>
+                    <span className="text-xs font-semibold text-foreground">Google Play</span>
                 </span>
             </button>
-            <button className="flex items-center gap-2 border border-white/30 rounded-lg px-3 py-2 hover:bg-white/10 transition-colors">
-                <FaApple size={20} className="text-white" />
+            <button className="flex items-center gap-2 bg-white rounded-lg px-3 py-2 hover:bg-white/10 transition-colors">
+                <FaApple size={20} className="text-foreground" />
                 <span className="flex flex-col text-left leading-tight">
-                    <span className="text-[9px] text-white/60 uppercase tracking-wide">Download on the</span>
-                    <span className="text-xs font-semibold text-white">App Store</span>
+                    <span className="text-[9px] text-foreground uppercase tracking-wide">Download on the</span>
+                    <span className="text-xs font-semibold text-foreground">App Store</span>
                 </span>
             </button>
         </div>
