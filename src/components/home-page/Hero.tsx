@@ -32,7 +32,7 @@ function Hero() {
                     </div>
                     <div className="relative max-w-6xl mx-auto animate-float">
                         <div className="relative rounded-2xl p-8">
-                            <img src="/public/image 1.png" alt="Chauffar homepage" 
+                            <img src="/image 1.png" alt="Chauffar homepage" 
                             className="w-full h-auto" />
                         </div>
                     </div>

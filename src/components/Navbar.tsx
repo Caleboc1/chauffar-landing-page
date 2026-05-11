@@ -9,7 +9,7 @@ function Navbar() {
             <div className='flex items-center justify-between h-16'>
                 <div>
                   <a href="/">
-            <img src="/public/logo.png" alt="Chauffar logo"
+            <img src="/logo.png" alt="Chauffar logo"
             className='h-8 w-auto drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]' /></a>    
                 </div>
               
