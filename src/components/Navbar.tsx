@@ -23,7 +23,7 @@ function Navbar() {
                 <div>
                   <a href="/">
             <img src="/logo.png" alt="Chauffar logo"
-            className='h-8 w-auto drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]' /></a>    
+            className='h-8 w-auto' /></a>    
                 </div>
               
               {/* Desktop nav */}
