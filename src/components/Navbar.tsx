@@ -4,13 +4,11 @@ import { HiMenu, HiX } from 'react-icons/hi'
 import { useState } from 'react'
 
 const navLinks = [
-    { label: 'About Us', href: '/' },
-    { label: 'Why Chauffar', href: '/about' },
-    { label: 'Drivers', href: '/drivers' },
+    { label: 'About Us', href: '/about' },
     { label: 'Riders', href: '/riders' },
+    { label: 'Drivers', href: '/drivers' },
     { label: 'Safety', href: '/safety' },
     { label: 'Support', href: '/support' },
-    { label: 'Help', href: '/help' },
 ]
 
 
