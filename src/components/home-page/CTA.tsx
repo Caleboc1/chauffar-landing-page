@@ -31,7 +31,7 @@ function CTA() {
 
                     {/* Hands image — smaller and repositioned on mobile */}
                     <img
-                        src="/hands.png"
+                        src="/hands1.png"
                         alt="Chauffar app on phone"
                         className="absolute bottom-0 right-0 
                             h-[45%] sm:h-[60%] md:h-[90%]
