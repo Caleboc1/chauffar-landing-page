@@ -1,3 +1,4 @@
+import FAQ from "@/components/about-page/Faqs";
 import AboutHero from "@/components/about-page/Hero";
 import Mission from "@/components/about-page/Mission";
 import Values from "@/components/about-page/Values";
@@ -15,6 +16,7 @@ const About = () => {
         <WhoWeAre/>
         <Mission/>
         <Values/>
+        <FAQ/>
         <CTA/>
         <Footer/>
         </div>
