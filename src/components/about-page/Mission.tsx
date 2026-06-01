@@ -12,7 +12,7 @@ function Mission() {
             </div>
 
             {/* Bottom — dark panel with mission & vision */}
-            <div className="bg-[#111111] px-4 sm:px-6">
+            <div className="bg-[#000000] px-4 sm:px-6">
                 <div className="container mx-auto max-w-5xl">
                     <div className="flex flex-col md:flex-row md:divide-x md:divide-white/10">
 
