@@ -25,7 +25,7 @@ function WhoWeAre() {
                         <img
                             src="/whoweare.jpg"
                             alt="Chauffar branded vehicle"
-                            className="w-full h-[320px] sm:h-[400px] md:h-[460px] rounded-2xl object-cover"
+                            className="w-full h-80 sm:h-100 md:h-115 rounded-2xl object-cover"
                         />
                     </div>
 
