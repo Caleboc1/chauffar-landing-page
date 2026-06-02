@@ -3,6 +3,7 @@ import CTA from "@/components/home-page/CTA";
 import Navbar from "@/components/Navbar";
 import ComfortClasses from "@/components/riders-page/ComfortClasses";
 import RidersHero from "@/components/riders-page/Hero";
+import StartBooking from "@/components/riders-page/StartBooking";
 import WhyChoose from "@/components/riders-page/WhyChoose";
 
 
@@ -13,6 +14,7 @@ const Riders = () => {
         <RidersHero/>
         <WhyChoose/>
         <ComfortClasses/>
+        <StartBooking/>
         <CTA/>
         <Footer/>
         </div>

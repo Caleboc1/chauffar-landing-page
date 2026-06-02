@@ -48,7 +48,7 @@ function ComfortClasses() {
                         {cars.map((car) => (
                             <div key={car.title}>
                                 {/* Card — dark box with car image */}
-                                <div className="bg-[#1a1a1a] rounded-xl flex items-center justify-center h-[180px] sm:h-[200px] mb-4 overflow-hidden px-4">
+                                <div className="bg-[#1a1a1a] rounded-xl flex items-center justify-center h-45 sm:h-50 mb-4 overflow-hidden px-4">
                                     <img
                                         src={car.image}
                                         alt={car.title}
