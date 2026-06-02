@@ -1,5 +1,6 @@
 import FAQ from "@/components/about-page/Faqs";
 import DriversHero from "@/components/drivers-page/Hero";
+import WhyDrivers from "@/components/drivers-page/WhyDrivers";
 import Footer from "@/components/Footer";
 import CTA from "@/components/home-page/CTA";
 import Navbar from "@/components/Navbar";
@@ -10,6 +11,7 @@ const Drivers = () => {
         <div className="min-h-screen bg-background">
         <Navbar/>
         <DriversHero/>
+        <WhyDrivers/>
         <FAQ/>
         <CTA/>
         <Footer/>
