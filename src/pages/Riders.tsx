@@ -3,6 +3,7 @@ import CTA from "@/components/home-page/CTA";
 import Navbar from "@/components/Navbar";
 import AbooutChauffer from "@/components/riders-page/AboutChauffer";
 import ComfortClasses from "@/components/riders-page/ComfortClasses";
+import DesignedFor from "@/components/riders-page/DesignedFor";
 import RidersHero from "@/components/riders-page/Hero";
 import StartBooking from "@/components/riders-page/StartBooking";
 import VIPBanner from "@/components/riders-page/VipBanner";
@@ -18,6 +19,7 @@ const Riders = () => {
         <ComfortClasses/>
         <StartBooking/>
         <VIPBanner/>
+        <DesignedFor/>
         <AbooutChauffer/>
         <CTA/>
         <Footer/>
