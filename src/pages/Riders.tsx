@@ -1,3 +1,4 @@
+import FAQ from "@/components/about-page/Faqs";
 import Footer from "@/components/Footer";
 import CTA from "@/components/home-page/CTA";
 import Navbar from "@/components/Navbar";
@@ -19,8 +20,9 @@ const Riders = () => {
         <ComfortClasses/>
         <StartBooking/>
         <VIPBanner/>
-        <DesignedFor/>
         <AbooutChauffer/>
+        <DesignedFor/>
+        <FAQ/>
         <CTA/>
         <Footer/>
         </div>

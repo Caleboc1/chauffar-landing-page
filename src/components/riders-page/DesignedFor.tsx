@@ -35,7 +35,7 @@ function DesignedFor() {
             />
 
             {/* Light overlay — stronger on left for text readability */}
-            <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-r from-white/95 via-white/80 to-transparent" />
 
             {/* Content */}
             <div className="relative z-10 px-4 sm:px-8 lg:px-16 py-14 sm:py-20 max-w-2xl">
@@ -51,7 +51,7 @@ function DesignedFor() {
                         <div key={item.title} className="flex items-start gap-4">
 
                             {/* Icon box */}
-                            <div className="w-11 h-11 rounded-xl bg-[#111111] flex items-center justify-center text-[#0DFF91] flex-shrink-0">
+                            <div className="w-11 h-11 rounded-xl bg-[#111111] flex items-center justify-center text-[#0DFF91] shrink-0">
                                 {item.icon}
                             </div>
 
