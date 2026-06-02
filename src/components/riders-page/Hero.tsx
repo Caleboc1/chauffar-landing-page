@@ -1,6 +1,6 @@
 function RidersHero() {
     return (
-        <section className="relative w-full min-h-170 overflow-hidden pt-24">
+        <section className="relative w-full md:min-h-170 overflow-hidden pt-24">
 
             {/* Background image */}
             <img

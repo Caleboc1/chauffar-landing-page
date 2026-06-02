@@ -105,7 +105,7 @@ function WhyChoose() {
                             }}
                         >
                             {/* Image */}
-                            <div className="w-full h-[260px] rounded-xl overflow-hidden">
+                            <div className="w-full h-65 rounded-xl overflow-hidden">
                                 <img
                                     src={slide.image}
                                     alt={slide.title}
