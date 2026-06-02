@@ -1,4 +1,5 @@
 import FAQ from "@/components/about-page/Faqs";
+import DriverGetStarted from "@/components/drivers-page/DriverGetStarted";
 import DriversHero from "@/components/drivers-page/Hero";
 import WhyDrivers from "@/components/drivers-page/WhyDrivers";
 import Footer from "@/components/Footer";
@@ -12,6 +13,7 @@ const Drivers = () => {
         <Navbar/>
         <DriversHero/>
         <WhyDrivers/>
+        <DriverGetStarted/>
         <FAQ/>
         <CTA/>
         <Footer/>
