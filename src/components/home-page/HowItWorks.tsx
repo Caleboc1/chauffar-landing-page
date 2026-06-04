@@ -15,7 +15,7 @@ function HowItWorks() {
             <div className="flex flex-col md:flex-row min-h-85">
 
                 {/* Left — image, takes up half */}
-                <div className="w-full md:w-1/2 relative">
+                <div className="w-full md:w-1/2 relative" data-aos="fade-right">
                     <img
                         src="/picture1.png"
                         alt="Chauffar driver opening car door"
@@ -24,7 +24,7 @@ function HowItWorks() {
                 </div>
 
                 {/* Right — content */}
-                <div className="w-full md:w-1/2 flex flex-col justify-center px-10 py-12">
+                <div className="w-full md:w-1/2 flex flex-col justify-center px-10 py-12" data-aos="fade-left" data-aos-delay="100">
 
                     {/* Heading */}
                     <h2 className="text-4xl md:text-5xl font-black uppercase leading-tight tracking-tight mb-6">
@@ -34,7 +34,7 @@ function HowItWorks() {
                     {/* Checklist */}
                     <ul className="flex flex-col gap-3 mb-8">
                         {steps.map((step, i) => (
-                            <li key={i} className="flex items-center gap-3 text-sm text-white/80">
+                            <li key={i} className="flex items-center gap-3 text-sm text-white/80" data-aos="fade-up" data-aos-delay={i * 80}>
                                 <FaCheck size={13} className="text-white flex-shrink-0" />
                                 {step}
                             </li>

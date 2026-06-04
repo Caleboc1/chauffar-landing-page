@@ -22,7 +22,7 @@ function DriverGetStarted() {
             <div className="flex flex-col md:flex-row min-h-145">
 
                 {/* Left — dark bg with pattern image */}
-                <div className="relative w-full md:w-1/2 flex flex-col justify-center px-8 sm:px-12 py-14 overflow-hidden">
+                <div className="relative w-full md:w-1/2 flex flex-col justify-center px-8 sm:px-12 py-14 overflow-hidden" data-aos="fade-right">
 
                     {/* Background pattern image */}
                     <img
@@ -42,7 +42,7 @@ function DriverGetStarted() {
                         {/* Steps */}
                         <div className="flex flex-col">
                             {steps.map((step, i) => (
-                                <div key={i}>
+                                <div key={i} data-aos="fade-up" data-aos-delay={i * 80}>
                                     <div className="py-4">
                                         <h3 className="text-[#0DFF91] text-sm font-semibold mb-1.5">
                                             {step.title}
@@ -80,7 +80,7 @@ function DriverGetStarted() {
                 </div>
 
                 {/* Right — black bg with phone image */}
-                <div className="relative w-full md:w-1/2 bg-black flex items-center justify-center px-8 py-14">
+                <div className="relative w-full md:w-1/2 bg-black flex items-center justify-center px-8 py-14" data-aos="fade-left" data-aos-delay="120">
                     <img
                         src="/iPhone2.png"
                         alt="Chauffar driver app"

@@ -6,10 +6,10 @@ function CTA() {
             <div className="container mx-auto max-w-5xl">
 
                 {/* Card */}
-                <div className="relative rounded-3xl overflow-hidden bg-[#005629] min-h-[340px] sm:min-h-[420px] md:min-h-[460px]">
+                <div className="relative rounded-3xl overflow-hidden bg-[#005629] min-h-[340px] sm:min-h-[420px] md:min-h-[460px]" data-aos="zoom-in">
 
                     {/* Left — text content */}
-                    <div className="relative z-30 w-full md:w-[55%] p-8 sm:p-10 md:p-14">
+                    <div className="relative z-30 w-full md:w-[55%] p-8 sm:p-10 md:p-14" data-aos="fade-right" data-aos-delay="120">
                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight mb-3 sm:mb-4">
                             Ready to Experience<br />Ride-Hailing Done<br />Right?
                         </h2>

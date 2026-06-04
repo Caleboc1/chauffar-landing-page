@@ -3,7 +3,7 @@ function Mission() {
         <section className="bg-white">
 
             {/* Full width image — no padding, edge to edge */}
-            <div className="w-full h-80 sm:h-105 md:h-130">
+            <div className="w-full h-80 sm:h-105 md:h-130" data-aos="fade-up">
                 <img
                     src="/mission.png"
                     alt="Chauffar rider"
@@ -17,7 +17,7 @@ function Mission() {
                     <div className="flex flex-col md:flex-row md:divide-x md:divide-white/10">
 
                         {/* Our Mission */}
-                        <div className="w-full md:w-1/2 py-10 md:pr-12">
+                        <div className="w-full md:w-1/2 py-10 md:pr-12" data-aos="fade-up">
                             <h3 className="text-[#0DFF91] text-sm font-semibold mb-3">
                                 Our Mission
                             </h3>
@@ -27,7 +27,7 @@ function Mission() {
                         </div>
 
                         {/* Our Vision */}
-                        <div className="w-full md:w-1/2 py-10 md:pl-12 border-t border-white/10 md:border-t-0">
+                        <div className="w-full md:w-1/2 py-10 md:pl-12 border-t border-white/10 md:border-t-0" data-aos="fade-up" data-aos-delay="120">
                             <h3 className="text-[#0DFF91] text-sm font-semibold mb-3">
                                 Our Vision
                             </h3>

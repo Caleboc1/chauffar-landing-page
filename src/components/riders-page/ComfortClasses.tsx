@@ -21,7 +21,7 @@ function ComfortClasses() {
         <section className="bg-[#0a0a0a]">
 
             {/* Banner image — full width, no padding */}
-            <div className="w-full h-full">
+            <div className="w-full h-full" data-aos="fade-up">
                 <img
                     src="/banner.jpg"
                     alt="Chauffar rider"
@@ -34,7 +34,7 @@ function ComfortClasses() {
                 <div className="container mx-auto max-w-6xl">
 
                     {/* Heading */}
-                    <div className="text-center mb-12">
+                    <div className="text-center mb-12" data-aos="fade-up">
                         <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                             Comfort for Every Class
                         </h2>
@@ -45,8 +45,8 @@ function ComfortClasses() {
 
                     {/* Car cards grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                        {cars.map((car) => (
-                            <div key={car.title}>
+                        {cars.map((car, i) => (
+                            <div key={car.title} data-aos="fade-up" data-aos-delay={i * 100}>
                                 {/* Card — dark box with car image */}
                                 <div className="bg-[#1a1a1a] rounded-xl flex items-center justify-center h-45 sm:h-50 mb-4 overflow-hidden px-4">
                                     <img

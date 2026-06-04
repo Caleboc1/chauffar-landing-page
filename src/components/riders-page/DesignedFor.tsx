@@ -38,7 +38,7 @@ function DesignedFor() {
             <div className="absolute inset-0 bg-linear-to-r from-white/95 via-white/80 to-transparent" />
 
             {/* Content */}
-            <div className="relative z-10 px-4 sm:px-8 lg:px-16 py-14 sm:py-20 max-w-2xl">
+            <div className="relative z-10 px-4 sm:px-8 lg:px-16 py-14 sm:py-20 max-w-2xl" data-aos="fade-right">
 
                 {/* Heading */}
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground leading-tight mb-10">
@@ -47,8 +47,8 @@ function DesignedFor() {
 
                 {/* Use case list */}
                 <div className="flex flex-col gap-7">
-                    {useCases.map((item) => (
-                        <div key={item.title} className="flex items-start gap-4">
+                    {useCases.map((item, i) => (
+                        <div key={item.title} className="flex items-start gap-4" data-aos="fade-up" data-aos-delay={i * 80}>
 
                             {/* Icon box */}
                             <div className="w-11 h-11 rounded-xl bg-[#111111] flex items-center justify-center text-[#0DFF91] shrink-0">

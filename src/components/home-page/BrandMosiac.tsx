@@ -4,26 +4,26 @@ function BrandMosaic() {
 
             {/* Mobile — stacked vertically */}
             <div className="flex flex-col md:hidden">
-                <div className="w-full h-[260px]">
+                <div className="w-full h-[260px]" data-aos="fade-up">
                     <img src="/frame1.png" alt="Chauffar branded vehicle" className="w-full h-full object-cover" />
                 </div>
-                <div className="w-full h-[260px]">
+                <div className="w-full h-[260px]" data-aos="fade-up" data-aos-delay="100">
                     <img src="/frame2.jpg" alt="Chauffar street branding" className="w-full h-full object-cover" />
                 </div>
-                <div className="w-full h-[260px]">
+                <div className="w-full h-[260px]" data-aos="fade-up" data-aos-delay="200">
                     <img src="/frame3.png" alt="Chauffar branded vehicle" className="w-full h-full object-cover" />
                 </div>
             </div>
 
             {/* Desktop — side by side */}
             <div className="hidden md:flex flex-row h-[420px]">
-                <div className="w-[40%] flex-shrink-0">
+                <div className="w-[40%] flex-shrink-0" data-aos="fade-right">
                     <img src="/frame1.png" alt="Chauffar branded vehicle" className="w-full h-full object-cover" />
                 </div>
-                <div className="w-[20%] flex-shrink-0">
+                <div className="w-[20%] flex-shrink-0" data-aos="fade-up" data-aos-delay="100">
                     <img src="/frame2.jpg" alt="Chauffar street branding" className="w-full h-full object-cover" />
                 </div>
-                <div className="w-[40%] flex-shrink-0">
+                <div className="w-[40%] flex-shrink-0" data-aos="fade-left" data-aos-delay="180">
                     <img src="/frame3.png" alt="Chauffar branded vehicle" className="w-full h-full object-cover" />
                 </div>
             </div>

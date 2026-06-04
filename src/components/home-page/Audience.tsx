@@ -19,16 +19,18 @@ function Audience() {
             <div className="container mx-auto max-w-5xl">
 
                 {/* Heading */}
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 leading-tight">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 leading-tight" data-aos="fade-up">
                     Built for People Who Expect More<br />from Every Ride
                 </h2>
 
                 {/* Cards grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-                    {cards.map((card) => (
+                    {cards.map((card, i) => (
                         <div
                             key={card.label}
                             className="relative rounded-2xl overflow-hidden aspect-[3/4] group cursor-pointer"
+                            data-aos="fade-up"
+                            data-aos-delay={i * 100}
                         >
                             {/* Grayscale image */}
                             <img

@@ -52,14 +52,14 @@ function Features() {
         <section className="bg-[#131313] text-white pt-16">
 
             {/* Heading */}
-            <div className="text-center mb-10 px-4">
+            <div className="text-center mb-10 px-4" data-aos="fade-up">
                 <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight">
                     A Better Ride Experience<br />Engineered Into Every Detail
                 </h2>
             </div>
 
             {/* Tab switcher — scrollable on mobile */}
-            <div className="px-4 relative z-20 -mb-4 flex justify-center">
+            <div className="px-4 relative z-20 -mb-4 flex justify-center" data-aos="fade-up" data-aos-delay="100">
                 <div className="flex flex-row overflow-x-auto scrollbar-none gap-1 bg-[#131313] rounded-full p-2 border border-[#222222] max-w-full">
                     {tabs.map((tab, i) => (
                         <button
@@ -78,7 +78,7 @@ function Features() {
             </div>
 
             {/* Content card */}
-            <div className="relative w-full overflow-hidden rounded-t-3xl">
+            <div className="relative w-full overflow-hidden rounded-t-3xl" data-aos="fade-up" data-aos-delay="180">
 
                 {/* Background image */}
                 <img

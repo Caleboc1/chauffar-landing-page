@@ -10,7 +10,7 @@ function RidersHero() {
             />
 
             {/* Content */}
-            <div className="relative z-10 px-6 sm:px-10 lg:px-16 py-10 sm:py-14 max-w-2xl">
+            <div className="relative z-10 px-6 sm:px-10 lg:px-16 py-10 sm:py-14 max-w-2xl" data-aos="fade-up">
 
                 {/* Badge */}
                 <div className="inline-block bg-[#0DFF91] text-black text-xs font-bold uppercase tracking-widest px-4 py-2 mb-6">

@@ -40,21 +40,21 @@ function WhyChoose() {
     // Update visibleCount based on screen width
     useEffect(() => {
         const update = () => {
-            if (window.innerWidth < 640) setVisibleCount(1)
-            else if (window.innerWidth < 1024) setVisibleCount(2)
-            else setVisibleCount(3)
+            const nextVisibleCount = window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 3
+            setVisibleCount(nextVisibleCount)
+            setCurrent((prev) => Math.min(prev, slides.length - nextVisibleCount))
         }
         update()
         window.addEventListener("resize", update)
         return () => window.removeEventListener("resize", update)
     }, [])
 
-    const next = () => setCurrent((prev) => (prev >= maxIndex ? 0 : prev + 1))
-
     useEffect(() => {
-        const interval = setInterval(next, 3000)
+        const interval = setInterval(() => {
+            setCurrent((prev) => (prev >= maxIndex ? 0 : prev + 1))
+        }, 3000)
         return () => clearInterval(interval)
-    }, [current, maxIndex])
+    }, [maxIndex])
 
     useEffect(() => {
         if (!trackRef.current) return
@@ -64,17 +64,12 @@ function WhyChoose() {
         })
     }, [current])
 
-    // Reset current if it exceeds new maxIndex on resize
-    useEffect(() => {
-        if (current > maxIndex) setCurrent(0)
-    }, [maxIndex])
-
     return (
         <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
             <div className="container mx-auto max-w-8xl">
 
                 {/* Heading + description */}
-                <div className="flex flex-col  md:items-start mb-10">
+                <div className="flex flex-col  md:items-start mb-10" data-aos="fade-up">
                     <div className="md:w-[40%] mb-4 ">
                         <h1 className="text-3xl sm:text-3xl font-bold text-foreground leading-tight">
                             Why Riders Choose Chauffar
@@ -97,6 +92,8 @@ function WhyChoose() {
                         <div
                             key={i}
                             className="flex flex-col gap-3"
+                            data-aos="fade-up"
+                            data-aos-delay={(i % 3) * 90}
                             style={{
                                 scrollSnapAlign: "start",
                                 minWidth: `${CARD_WIDTH}px`,

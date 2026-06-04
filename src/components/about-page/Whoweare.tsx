@@ -6,7 +6,7 @@ function WhoWeAre() {
                 <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
 
                     {/* Left — text content */}
-                    <div className="w-full md:w-[45%] px-2 sm:px-0">
+                    <div className="w-full md:w-[45%] px-2 sm:px-0" data-aos="fade-right">
                         <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6 leading-tight">
                             Who We Are
                         </h2>
@@ -21,7 +21,7 @@ function WhoWeAre() {
                     </div>
 
                     {/* Right — image, takes more space */}
-                    <div className="w-full md:w-[55%]">
+                    <div className="w-full md:w-[55%]" data-aos="fade-left" data-aos-delay="120">
                         <img
                             src="/whoweare.jpg"
                             alt="Chauffar branded vehicle"

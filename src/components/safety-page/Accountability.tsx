@@ -4,7 +4,7 @@ function Accountability() {
             <div className="container mx-auto max-w-6xl">
 
                 {/* Heading */}
-                <div className="mb-10">
+                <div className="mb-10" data-aos="fade-up">
                     <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
                         Built on Accountability
                     </h2>
@@ -17,7 +17,7 @@ function Accountability() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
 
                     {/* Card 1 */}
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-4" data-aos="fade-up">
                         <div className="w-full h-50 sm:h-55 rounded-xl overflow-hidden bg-[#1a1a1a]">
                             <img
                                 src="/accountability1.png"
@@ -34,7 +34,7 @@ function Accountability() {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-4" data-aos="fade-up" data-aos-delay="100">
                         <div className="w-full h-50 sm:h-55 rounded-xl overflow-hidden bg-[#1a1a1a]">
                             <img
                                 src="/accountability2.png"
@@ -51,7 +51,7 @@ function Accountability() {
                     </div>
 
                     {/* Card 3 */}
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-4" data-aos="fade-up" data-aos-delay="200">
                         <div className="w-full h-50 sm:h-55 rounded-xl overflow-hidden bg-[#1a1a1a]">
                             <img
                                 src="/accountability3.png"

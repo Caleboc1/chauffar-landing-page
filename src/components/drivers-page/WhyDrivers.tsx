@@ -22,16 +22,18 @@ function WhyDrivers() {
             <div className="container mx-auto max-w-4xl">
 
                 {/* Heading */}
-                <h2 className="text-2xl sm:text-3xl font-bold text-foreground text-center mb-10">
+                <h2 className="text-2xl sm:text-3xl font-bold text-foreground text-center mb-10" data-aos="fade-up">
                     Why Drivers Choose Us?
                 </h2>
 
                 {/* Cards grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    {cards.map((card) => (
+                    {cards.map((card, i) => (
                         <div
                             key={card.title}
                             className="bg-[#F2F2F2] rounded-2xl p-6 flex flex-col"
+                            data-aos="fade-up"
+                            data-aos-delay={i * 100}
                         >
                             {/* Image */}
                             <div className="h-40 flex items-center justify-center mb-6">

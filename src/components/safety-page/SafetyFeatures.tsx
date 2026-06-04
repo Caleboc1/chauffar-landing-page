@@ -41,7 +41,7 @@ function SafetyFeatures() {
             <div className="container mx-auto max-w-6xl">
 
                 {/* Heading */}
-                <div className="text-center mb-12">
+                <div className="text-center mb-12" data-aos="fade-up">
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
                         Designed with Safety in Mind
                     </h2>
@@ -52,10 +52,12 @@ function SafetyFeatures() {
 
                 {/* Cards grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                    {features.map((feature) => (
+                    {features.map((feature, i) => (
                         <div
                             key={feature.title}
                             className="bg-white rounded-2xl p-6 flex flex-col gap-4"
+                            data-aos="fade-up"
+                            data-aos-delay={(i % 3) * 90}
                         >
                             {/* Icon */}
                             <div className="w-14 h-14 rounded-xl bg-[#f5f5f5] flex items-center justify-center text-foreground">

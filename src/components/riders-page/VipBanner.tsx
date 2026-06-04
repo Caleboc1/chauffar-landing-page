@@ -13,7 +13,7 @@ function VIPBanner() {
                 className="absolute inset-0 w-full h-full object-cover object-center"
             />
             {/* Content — centered */}
-            <div className="relative z-10 flex flex-col items-center justify-center text-center h-full min-h-120 sm:min-h-140 px-4">
+            <div className="relative z-10 flex flex-col items-center justify-center text-center h-full min-h-120 sm:min-h-140 px-4" data-aos="zoom-in">
 
                 {/* Crown icon */}
                 <Crown/>

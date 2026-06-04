@@ -58,12 +58,12 @@ function Tiers() {
             <div className="container mx-auto max-w-4xl">
 
                 {/* Heading */}
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-8 leading-tight">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-8 leading-tight" data-aos="fade-up">
                     Choose the Right Ride for<br />Every Moment
                 </h2>
 
                {/* Tab switcher — scrollable on mobile, spread on desktop */}
-<div className="flex flex-row overflow-x-auto scrollbar-none border-b border-gray-200 mb-6 sm:mb-8">
+<div className="flex flex-row overflow-x-auto scrollbar-none border-b border-gray-200 mb-6 sm:mb-8" data-aos="fade-up" data-aos-delay="100">
     {tiers.map((tier, i) => (
         <button
             key={tier.label}
@@ -80,7 +80,7 @@ function Tiers() {
 </div>
 
                 {/* Card */}
-                <div className="relative rounded-2xl overflow-hidden min-h-[420px] sm:min-h-[380px] md:h-[400px]">
+                <div className="relative rounded-2xl overflow-hidden min-h-[420px] sm:min-h-[380px] md:h-[400px]" data-aos="fade-up" data-aos-delay="180">
 
                     {/* Background image */}
                     <img

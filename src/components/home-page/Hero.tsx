@@ -8,7 +8,7 @@ function Hero() {
         <>
             <section className="pt-24 pb-12 px-4 sm:px-6 lg:px-8 ">
                 <div className="container mx-auto">
-                    <div className="text-center">
+                    <div className="text-center" data-aos="fade-up">
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 ">Premium Rides.</h1>
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 ">Zero Compromise.</h1>
 
@@ -30,7 +30,7 @@ function Hero() {
                             </Button>
                         </div>
                     </div>
-                    <div className="relative max-w-6xl mx-auto animate-float">
+                    <div className="relative max-w-6xl mx-auto animate-float" data-aos="zoom-in" data-aos-delay="150">
                         <div className="relative rounded-2xl p-8">
                             <img src="/image 1.png" alt="Chauffar homepage" 
                             className="w-full h-auto" />

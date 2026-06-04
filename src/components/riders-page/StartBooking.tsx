@@ -24,7 +24,7 @@ function StartBooking() {
                 <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
 
                     {/* Left — phone in gray box */}
-                    <div className="w-full md:w-[45%] shrink-0">
+                    <div className="w-full md:w-[45%] shrink-0" data-aos="fade-right">
                         <div
                             className="w-full rounded-2xl flex items-center justify-center pt-15 px-8"
                             style={{ backgroundColor: "#E3E3E3" }}
@@ -38,7 +38,7 @@ function StartBooking() {
                     </div>
 
                     {/* Right — content */}
-                    <div className="w-full md:w-[55%]">
+                    <div className="w-full md:w-[55%]" data-aos="fade-left" data-aos-delay="120">
 
                         {/* Heading */}
                         <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-8">
@@ -48,7 +48,7 @@ function StartBooking() {
                         {/* Steps */}
                         <div className="flex flex-col">
                             {steps.map((step, i) => (
-                                <div key={i}>
+                                <div key={i} data-aos="fade-up" data-aos-delay={i * 80}>
                                     <div className="py-5">
                                         <h3 className="text-[#09BB6A] text-sm font-semibold mb-2">
                                             {step.title}

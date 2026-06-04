@@ -32,7 +32,7 @@ function Values() {
             <div className="container mx-auto max-w-5xl">
 
                 {/* Heading */}
-                <div className="text-center mb-16">
+                <div className="text-center mb-16" data-aos="fade-up">
                     <h2 className="text-3xl sm:text-4xl font-bold mb-4">
                         What We Value
                     </h2>
@@ -46,8 +46,8 @@ function Values() {
 
                 {/* Values grid */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6">
-                    {values.map((value) => (
-                        <div key={value.title} className="flex flex-col gap-4">
+                    {values.map((value, i) => (
+                        <div key={value.title} className="flex flex-col gap-4" data-aos="fade-up" data-aos-delay={i * 90}>
 
                             {/* Icon box */}
                             <div className="w-12 h-12 rounded-xl bg-[#1a1a1a] flex items-center justify-center text-[#0DFF91]">

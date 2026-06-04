@@ -1,7 +1,9 @@
 
 import './App.css'
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from "aos";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Index from './pages/Index'
 import About from './pages/About';
 import Riders from './pages/Riders';
@@ -10,10 +12,31 @@ import Safety from './pages/Safety';
 import Support from './pages/Support';
 
 const queryClient = new QueryClient();
+
+function AOSInitializer() {
+  const location = useLocation();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 80,
+    });
+  }, []);
+
+  useEffect(() => {
+    AOS.refreshHard();
+  }, [location.pathname]);
+
+  return null;
+}
+
 function App() {
   return (
    <QueryClientProvider client={queryClient}>
     <BrowserRouter>
+      <AOSInitializer />
       <Routes>
         <Route path="/" element={<Index/>} />
         <Route path="/about" element={<About/>} />

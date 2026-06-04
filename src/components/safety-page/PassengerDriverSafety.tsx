@@ -7,7 +7,7 @@ function PassengerDriverSafety() {
                 <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16 mb-16 md:mb-24">
 
                     {/* Left — text */}
-                    <div className="w-full md:w-1/2 order-2 md:order-1">
+                    <div className="w-full md:w-1/2 order-2 md:order-1" data-aos="fade-right">
                         <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
                             Passenger Safety
                         </h2>
@@ -25,7 +25,7 @@ function PassengerDriverSafety() {
                     </div>
 
                     {/* Right — image */}
-                    <div className="w-full md:w-1/2 order-1 md:order-2">
+                    <div className="w-full md:w-1/2 order-1 md:order-2" data-aos="fade-left" data-aos-delay="120">
                         <img
                             src="/passenger-safety.png"
                             alt="Passenger Safety"
@@ -39,7 +39,7 @@ function PassengerDriverSafety() {
                 <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
 
                     {/* Left — image */}
-                    <div className="w-full md:w-1/2">
+                    <div className="w-full md:w-1/2" data-aos="fade-right">
                         <img
                             src="/driver-safety.png"
                             alt="Driver Safety"
@@ -48,7 +48,7 @@ function PassengerDriverSafety() {
                     </div>
 
                     {/* Right — text */}
-                    <div className="w-full md:w-1/2">
+                    <div className="w-full md:w-1/2" data-aos="fade-left" data-aos-delay="120">
                         <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
                             Driver Safety
                         </h2>
