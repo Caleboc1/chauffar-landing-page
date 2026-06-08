@@ -1,5 +1,4 @@
 import Caution from "@/assets/svgIcons/Caution"
-import Contacts from "@/assets/svgIcons/Contacts"
 import Location from "@/assets/svgIcons/Location"
 
 const features = [
@@ -14,22 +13,46 @@ const features = [
         description: "Share your live trip status with loved ones so they can follow your journey in real-time.",
     },
     {
-        icon: <Contacts />,
+        icon: (
+            <img
+                src="/Rectangle 832.svg"
+                alt=""
+                className="h-full w-full rounded-xl object-cover"
+            />
+        ),
         title: "Emergency Contacts",
         description: "Nominate trusted contacts who will be notified instantly if you use the in-app emergency button.",
     },
     {
-        icon: <Caution />,
+        icon: (
+            <img
+                src="/Rectangle 832 (1).svg"
+                alt=""
+                className="h-full w-full rounded-xl object-cover"
+            />
+        ),
         title: "Driver Verification",
         description: "Every chauffeur undergoes comprehensive background checks and regular performance audits.",
     },
     {
-        icon: <Caution />,
+        icon: (
+            <img
+                src="/Rectangle 832 (2).svg"
+                alt=""
+                className="h-full w-full rounded-xl object-cover"
+            />
+        ),
         title: "Ride Records",
         description: "A permanent digital log of every trip, including route history and driver details, for your security.",
     },
     {
-        icon: <Caution />,
+        icon: (
+            <img
+                src="/Rectangle 832 (3).svg"
+                alt=""
+                className="h-full w-full rounded-xl object-cover"
+            />
+        ),
         title: "Support Access",
         description: "Dedicated safety specialists are available 24/7 to assist with any concerns during or after your ride.",
     },
