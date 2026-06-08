@@ -1,33 +1,52 @@
 function BrandMosaic() {
     return (
         <section className="w-full overflow-hidden">
-
-            {/* Mobile — stacked vertically */}
+            {/* Mobile: all images stack at their natural aspect ratios. */}
             <div className="flex flex-col md:hidden">
-                <div className="w-full h-[260px]" data-aos="fade-up">
-                    <img src="/frame1.png" alt="Chauffar branded vehicle" className="w-full h-full object-cover" />
-                </div>
-                <div className="w-full h-[260px]" data-aos="fade-up" data-aos-delay="100">
-                    <img src="/frame2.jpg" alt="Chauffar street branding" className="w-full h-full object-cover" />
-                </div>
-                <div className="w-full h-[260px]" data-aos="fade-up" data-aos-delay="200">
-                    <img src="/frame3.png" alt="Chauffar branded vehicle" className="w-full h-full object-cover" />
-                </div>
+                <img
+                    src="/mosaic.png"
+                    alt="Chauffar brand mosaic"
+                    className="block h-auto w-full"
+                    data-aos="fade-up"
+                />
+                <img
+                    src="/mosaic1.png"
+                    alt="Chauffar brand mosaic"
+                    className="block h-auto w-full"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                />
+                <img
+                    src="/mosaic2.png"
+                    alt="Chauffar brand mosaic"
+                    className="block h-auto w-full"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                />
             </div>
 
-            {/* Desktop — side by side */}
-            <div className="hidden md:flex flex-row h-[420px]">
-                <div className="w-[40%] flex-shrink-0" data-aos="fade-right">
-                    <img src="/frame1.png" alt="Chauffar branded vehicle" className="w-full h-full object-cover" />
+            {/* Desktop: two stacked images on the left, one full-height image on the right. */}
+            <div className="hidden grid-cols-2 md:grid">
+                <div className="flex min-w-0 flex-col" data-aos="fade-right">
+                    <img
+                        src="/mosaic.png"
+                        alt="Chauffar brand mosaic"
+                        className="block h-auto w-full"
+                    />
+                    <img
+                        src="/mosaic1.png"
+                        alt="Chauffar brand mosaic"
+                        className="block h-auto w-full"
+                    />
                 </div>
-                <div className="w-[20%] flex-shrink-0" data-aos="fade-up" data-aos-delay="100">
-                    <img src="/frame2.jpg" alt="Chauffar street branding" className="w-full h-full object-cover" />
-                </div>
-                <div className="w-[40%] flex-shrink-0" data-aos="fade-left" data-aos-delay="180">
-                    <img src="/frame3.png" alt="Chauffar branded vehicle" className="w-full h-full object-cover" />
+                <div className="min-w-0" data-aos="fade-left" data-aos-delay="100">
+                    <img
+                        src="/mosaic2.png"
+                        alt="Chauffar brand mosaic"
+                        className="block h-auto w-full"
+                    />
                 </div>
             </div>
-
         </section>
     )
 }

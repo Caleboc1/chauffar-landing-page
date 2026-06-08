@@ -87,9 +87,6 @@ function Features() {
                     className="absolute inset-0 w-full h-full object-cover object-center"
                 />
 
-                {/* Dark overlay — full on mobile, right-side fade on desktop */}
-                <div className="absolute inset-0 bg-black/60 md:bg-gradient-to-r md:from-black/10 md:via-black/30 md:to-black/80" />
-
                 {/* Content — stacked on mobile, right panel on desktop */}
                 <div className="relative z-10 flex flex-col md:flex-row min-h-[520px] md:min-h-[620px]">
 

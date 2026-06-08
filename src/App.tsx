@@ -10,6 +10,7 @@ import Riders from './pages/Riders';
 import Drivers from './pages/Drivers';
 import Safety from './pages/Safety';
 import Support from './pages/Support';
+import Privacy from './pages/Privacy';
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ function AOSInitializer() {
   }, []);
 
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     AOS.refreshHard();
   }, [location.pathname]);
 
@@ -44,6 +46,7 @@ function App() {
         <Route path="/drivers" element={<Drivers/>} />
         <Route path="/safety" element={<Safety/>} />
         <Route path="/support" element={<Support/>} />
+        <Route path="/privacy" element={<Privacy/>} />
       </Routes>
       </BrowserRouter>
     </QueryClientProvider>

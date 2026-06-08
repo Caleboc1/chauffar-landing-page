@@ -1,73 +1,103 @@
-
-import { Button } from './ui/button'
-import { HiMenu, HiX } from 'react-icons/hi'
 import { useState } from 'react'
+import { HiMenu, HiX } from 'react-icons/hi'
+import { Link, NavLink } from 'react-router-dom'
+import { Button } from './ui/button'
 
-const navLinks = [
-    { label: 'About Us', href: '/about' },
-    { label: 'Riders', href: '/riders' },
-    { label: 'Drivers', href: '/drivers' },
-    { label: 'Safety', href: '/safety' },
-    { label: 'Support', href: '/support' },
-]
-
+const navigation = [
+    { type: 'link', label: 'About Us', href: '/about' },
+    { type: 'link', label: 'Riders', href: '/riders' },
+    { type: 'link', label: 'Drivers', href: '/drivers' },
+    { type: 'link', label: 'Safety', href: '/safety' },
+    { type: 'link', label: 'Support', href: '/support' },
+    { type: 'action', label: 'Download App' },
+] as const
 
 function Navbar() {
-    const [open, setOpen] = useState(false);
-  return (
-    <header className='fixed top-0 w-full bg-white z-50'>
-        <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
-            <div className='flex items-center justify-between h-16'>
-                <div>
-                  <a href="/">
-            <img src="/logo.png" alt="Chauffar logo"
-            className='h-8 w-auto' /></a>    
-                </div>
-              
-              {/* Desktop nav */}
-              <nav className='hidden md:flex items-center space-x-4'>
-                        {navLinks.map((link) => (
-                            <a key={link.label} href={link.href} className='text-sm hover:text-white/70 transition-colors'>
-                                {link.label}
-                            </a>
+    const [open, setOpen] = useState(false)
+
+    return (
+        <header className="fixed top-0 z-50 w-full bg-white">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex h-16 items-center justify-between">
+                    <Link to="/" onClick={() => setOpen(false)}>
+                        <img src="/logo.png" alt="Chauffar logo" className="h-8 w-auto" />
+                    </Link>
+
+                    <nav className="hidden items-center gap-4 md:flex" aria-label="Primary navigation">
+                        {navigation.map((item) => (
+                            item.type === 'link' ? (
+                                <NavLink
+                                    key={item.label}
+                                    to={item.href}
+                                    className={({ isActive }) =>
+                                        `text-sm transition-colors ${
+                                            isActive
+                                                ? 'font-semibold text-[#1a5c35]'
+                                                : 'text-foreground hover:text-[#1a5c35]'
+                                        }`
+                                    }
+                                >
+                                    {item.label}
+                                </NavLink>
+                            ) : (
+                                <Button key={item.label} className="rounded-full px-4 py-6 text-foreground">
+                                    {item.label}
+                                </Button>
+                            )
                         ))}
-                        <Button className='rounded-full px-4 py-6 text-foreground'>Download App</Button>
                     </nav>
 
-                    {/* Mobile hamburger */}
                     <button
-                        className='md:hidden text-foreground p-1'
-                        onClick={() => setOpen(!open)}
-                        aria-label="Toggle menu"
+                        type="button"
+                        className="p-1 text-foreground md:hidden"
+                        onClick={() => setOpen((current) => !current)}
+                        aria-label={open ? 'Close menu' : 'Open menu'}
+                        aria-expanded={open}
+                        aria-controls="mobile-navigation"
                     >
                         {open ? <HiX size={24} /> : <HiMenu size={24} />}
                     </button>
                 </div>
             </div>
 
-            {/* Mobile menu */}
             {open && (
-                <div className='md:hidden bg-black/95 backdrop-blur-md border-t border-white/10'>
-                    <nav className='container mx-auto px-4 py-6 flex flex-col gap-1'>
-                        {navLinks.map((link) => (
-                            <a
-                                key={link.label}
-                                href={link.href}
-                                onClick={() => setOpen(false)}
-                                className='text-white/80 hover:text-white text-base py-3 border-b border-white/10 last:border-none transition-colors'
-                            >
-                                {link.label}
-                            </a>
+                <div id="mobile-navigation" className="border-t border-gray-200 bg-white shadow-lg md:hidden">
+                    <nav
+                        className="container mx-auto flex flex-col gap-1 px-4 py-6"
+                        aria-label="Mobile navigation"
+                    >
+                        {navigation.map((item) => (
+                            item.type === 'link' ? (
+                                <NavLink
+                                    key={item.label}
+                                    to={item.href}
+                                    onClick={() => setOpen(false)}
+                                    className={({ isActive }) =>
+                                        `border-b border-gray-200 py-3 text-base transition-colors ${
+                                            isActive
+                                                ? 'font-semibold text-[#1a5c35]'
+                                                : 'text-foreground hover:text-[#1a5c35]'
+                                        }`
+                                    }
+                                >
+                                    {item.label}
+                                </NavLink>
+                            ) : (
+                                <div key={item.label} className="pt-4">
+                                    <Button
+                                        onClick={() => setOpen(false)}
+                                        className="w-full rounded-full bg-[#0DFF91] px-6 py-6 font-semibold text-black hover:bg-[#00e07a]"
+                                    >
+                                        {item.label}
+                                    </Button>
+                                </div>
+                            )
                         ))}
-                        <div className='pt-4'>
-                            <Button className='rounded-full px-6 py-6 w-full bg-[#0DFF91] text-black font-semibold hover:bg-[#00e07a]'>
-                                Download App
-                            </Button>
-                        </div>
                     </nav>
-            </div>)}
-    </header>
-  )
+                </div>
+            )}
+        </header>
+    )
 }
 
 export default Navbar

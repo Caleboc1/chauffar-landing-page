@@ -3,6 +3,7 @@ import { FaXTwitter } from "react-icons/fa6"
 import { FaApple } from "react-icons/fa"
 import { IoLogoGooglePlaystore } from "react-icons/io5"
 import { MdLanguage } from "react-icons/md"
+import { Link } from "react-router-dom"
 import Logo from "./svgIcons/Logo"
 
 const footerLinks = [
@@ -24,7 +25,7 @@ const footerLinks = [
     },
     {
         heading: "Resources",
-        links: ["Help center", "Term & Conditions", "Privacy", "Company Policy", "Security"],
+        links: ["Help center", "Terms & Conditions", "Privacy", "Company Policy", "Security"],
     },
 ]
 
@@ -35,6 +36,14 @@ const socialLinks = [
     { icon: <FaLinkedinIn size={16} />, label: "LinkedIn" },
     { icon: <FaTiktok size={16} />, label: "TikTok" },
 ]
+
+const footerRoutes: Record<string, string> = {
+    "About Chauffar": "/about",
+    "Riders": "/riders",
+    "Drivers": "/drivers",
+    "Terms & Conditions": "/privacy",
+    "Privacy": "/privacy",
+}
 
 function AppStoreButtons() {
     return (
@@ -90,9 +99,18 @@ function Footer() {
                             <ul className="flex flex-col gap-2.5">
                                 {col.links.map((link) => (
                                     <li key={link}>
-                                        <a href="#" className="text-white/80 text-sm hover:text-white transition-colors">
-                                            {link}
-                                        </a>
+                                        {footerRoutes[link] ? (
+                                            <Link
+                                                to={footerRoutes[link]}
+                                                className="text-white/80 text-sm hover:text-white transition-colors"
+                                            >
+                                                {link}
+                                            </Link>
+                                        ) : (
+                                            <span className="text-white/80 text-sm">
+                                                {link}
+                                            </span>
+                                        )}
                                     </li>
                                 ))}
                             </ul>
