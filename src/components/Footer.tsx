@@ -144,7 +144,7 @@ function Footer() {
                         <span className="text-xs">▾</span>
                     </button>
                     <p className="text-white/30 text-xs">
-                        © 2017–2026 Chauffar™
+                        © 2026 Chauffar™
                     </p>
                 </div>
 
